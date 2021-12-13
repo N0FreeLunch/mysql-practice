@@ -51,5 +51,5 @@ ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 
 ## Reference
 ```
-\[Book\] SQL Boost
+[Book] SQL Boost
 ```

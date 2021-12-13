@@ -1,6 +1,3 @@
-## table space란?
-[Document](https://docs.oracle.com/cd/B19306_01/server.102/b14200/statements_7003.htm)
-
 ## create user
 ### Oracle version 12 or later
 ```
