@@ -6,7 +6,7 @@ Version : 19 XE
 
 
 ## SET TABLE STORAGE
-```
+```sql
 CREATE TABLESPACE ORA_SQL_TEST_TS DATAFILE 'C:\dev\ORA_SQL_TEST\ORA_SQL_TEST.DBA' SIZE 10G
 EXTENT MANAGEMENT LOCAL SEGMENT SPACE MANAGEMENT AUTO;
 ```
@@ -39,11 +39,11 @@ password : 1qaz2wsx
 
 ## 문제 해결
 - 대량 데이터 생성 시 임시 공간 부족으로 발생하는 문제 해결
-```
+```sql
 SELECT T1.FILE_NAME ,(T1.BYTES / 1024 / 1024) TMP_MB FROM DBA_TEMP_FILES T1;
 ```
 - 위 값이 5000 미만이라면 (5000MB) TEMP 공간을 늘려줘야 한다.
-```
+```sql
 ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 ```
 - 경로는 TEMP 공간을 조회할 때 출력되는 경로를 지정해 줘야 한다.
