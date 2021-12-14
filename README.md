@@ -52,5 +52,9 @@ ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 - 윈도우 "서비스"에서 OracleServiceXE, OracleOraDB18Home1TNSListener을 재시작한다.
 - 일반적으로 : 포트 번호 - 1521, 서비스네임 - XE, 호스트 - 컴퓨터명
 
+
+## ERD
+![ER Diagram](./ERD.svg)
+
 ## Reference
 \[Book\] SQL Boost
