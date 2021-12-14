@@ -22,13 +22,13 @@ cd c:\dev\db\sql-practice\sql_dump
 -- CREATE USER C##ORA_SQL_TEST IDENTIFIED BY "1qaz2wsx" DEFAULT TABLESPACE C##ORA_SQL_TEST_TS;
 ```
 
-## 테이블 생성 SQL을 import
+### 테이블 생성 SQL을 import
 - **중요** Root유저가 **아닌** `C##ORA_SQL_TEST`으로 접속한다.
 ```sql
 @SQLBooster_C1_02_테이블생성.sql
 ```
 
-- 잘못 생성 했다면
+#### 잘못 생성 했다면
 ```
 DROP TABLE T_ORD_DET;
 DROP TABLE T_ORD;
@@ -41,7 +41,32 @@ DROP TABLE C_BAS_CD_DV;
 DROP TABLE C_BAS_CD;
 ```
 
-- 외래키 제약 때문에 지울 수 없는 경우 (지울 테이블명은 바꿔 줘야 한다.)
+#### 외래키 제약 때문에 지울 수 없는 경우
+- 지울 테이블명은 바꿔 줘야 한다.
+```sql
+DROP TABLE T_ORD_DET CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE T_ORD CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE T_ITM_EVL CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE M_CUS CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE M_RGN CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE M_ITM_PRC_HIS CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE M_ITM CASCADE CONSTRAINTS;
+```
 ```sql
 DROP TABLE C_BAS_CD_DV CASCADE CONSTRAINTS;
+```
+```sql
+DROP TABLE C_BAS_CD CASCADE CONSTRAINTS;
 ```
