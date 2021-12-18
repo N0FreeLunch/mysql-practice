@@ -45,7 +45,7 @@ ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 - 경로는 TEMP 공간을 조회할 때 출력되는 경로를 지정해 줘야 한다.
 
 ## GUI database tool
-### sqldeveloper
+### sql developer
 - download link : https://www.oracle.com/tools/downloads/sqldev-downloads.html
 #### 접속이 되지 않을 경우
 - 디비가 설치된 폴더의 `\network\admin` 경로의 `tnsnames.ora` 파일을 텍스트 에디터로 열고 적혀 있는 호스트 명, 포트 번호, 서비스네임 등을 확인한 후 입력한다. (설치 경로 예 : `C:\dev\18.0.0\dbhomeXE\network\admin`)
@@ -55,6 +55,7 @@ ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 
 ## ERD
 ![ER Diagram](./ERD.svg)
+- sql developer으로 생성
 
 ## Reference
 \[Book\] SQL Boost
