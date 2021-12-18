@@ -57,5 +57,8 @@ ALTER DATABASE TEMPFILE 'C:\DEV\18.0.0\ORADATA\XE\TEMP01.DBF' RESIZE 5000M;
 ![ER Diagram](./ERD.svg)
 - sql developer으로 생성
 
+![ER Diagram](./erd_from_book.png)
+-  SQL Boost 책에서 발췌
+
 ## Reference
 \[Book\] SQL Boost
