@@ -1,0 +1,24 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql:8.0.32
+    command: --default-authentication-plugin=mysql_native_password --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: localpassword
+    ports:
+      - 33060:3306
+    volumes:
+      - data:/var/lib/mysql
+      - config:/etc/mysql/conf.d
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  
+volumes:
+  data: {}
+  config: {}
