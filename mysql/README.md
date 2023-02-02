@@ -40,6 +40,10 @@ docker compose ps
 show databases;
 ```
 
+## 대용량 데이터 셈플
+- https://dev.mysql.com/doc/index-other.html
+
+
 ## Reference
 - [혼자 공부하는 SQL](https://www.youtube.com/playlist?list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm)
 - [mysql DOCKER OFFICIAL IMAGE](https://hub.docker.com/_/mysql)
