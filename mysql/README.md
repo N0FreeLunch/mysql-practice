@@ -30,10 +30,15 @@ docker compose ps
 - PORTS 부분을 확인하면 `33060/tcp, 0.0.0.0:33060->3306/tcp`으로 되어 있는 것을 알 수 있다.
 - host에서 도커의 mysql에 접근하려면 ip는 `0.0.0.0`, port는 `3306`을 입력한다.
 
-## mysql workbench
+## dbeaver
 - 호스트 컴퓨터에 설치한다.
-- [download](https://dev.mysql.com/downloads/workbench/)
+- [download](https://dbeaver.io/download/) mysql workbench의 경우 arm cpu를 지원하는 버전이 없기 때문에 다른 툴을 사용하도록 하자.
 - host에서 도커의 mysql에 접근하려면 `docker compose ps` 결과에서 post부분 정보에 해당하는 ip는 `0.0.0.0`, port는 `3306`을 입력한다.
+
+### 쿼리를 입력해서 잘 작동하는지 확인 해 보자.
+```
+show databases;
+```
 
 ## Reference
 - [혼자 공부하는 SQL](https://www.youtube.com/playlist?list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl8Pm)
