@@ -1,6 +1,6 @@
 ## Basic
-- [terminology](./terminology.md)
-- [table](./table.md)
-- [make shopping mall](./makeShoppingMall.md)
-- [insert data](./insertData.md)
-- [modify data](./modifyAndDeleteData.md)
+- [terminology](./basics/terminology.md)
+- [table](./basics/table.md)
+- [make schema](./basics/makeSchema.md)
+- [insert data](./basics/insertData.md)
+- [modify data](./basics/modifyAndDeleteData.md)
