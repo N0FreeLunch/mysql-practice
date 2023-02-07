@@ -11,4 +11,10 @@
 - [Excution plan](./databaseObject/ExcutionPlan.md)
 - [index](./databaseObject/Index.md)
 - [view](./databaseObject/view.md)
-- [StoredProcedure](./databaseObject/storedProcedure.md)
+- [storedProcedure](./databaseObject/storedProcedure.md)
+
+## Basic query
+- [make schema](./basicQuery/makeSchema.md)
+- [select databases](./basicQuery/selectDatabase.md)
+- [understand business](./basicQuery/understandBusiness.md)
+- [select query](./basicQuery/selectQuery.md)
