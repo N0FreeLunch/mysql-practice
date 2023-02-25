@@ -35,3 +35,16 @@ select * from member where height <= 162;
 ```
 select mem_number, mem_name from member where height <= 162;
 ```
+
+#### 회원이 사는 지역이 경기, 전남, 경남인 멤버의 회원명과 이름을 조회하라.
+```
+select mem_name, addr from member where addr = '경기' or addr = '전남' or addr = '전남';
+```
+```
+select mem_name, addr from member where addr in ('경기', '전남', '전남');
+```
+
+#### 회원명에 '핑크'가 들어가는 대상을 조회하여라
+```
+select * from member where mem_name like '%핑크%';
+```
