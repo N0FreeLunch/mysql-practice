@@ -17,4 +17,4 @@
 - [make schema](./basicQuery/makeSchema.md)
 - [select databases](./basicQuery/selectDatabase.md)
 - [understand business](./basicQuery/understandBusiness.md)
-- [select query](./basicQuery/selectQuery.md)
+- [select query](./basicQuery/selectAndWehre.md)
