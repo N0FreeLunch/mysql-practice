@@ -30,3 +30,15 @@ select mem_name, debut_date from member order by debut_date asc limit 3;
 ```
 select mem_name, debut_date from member order by debut_date asc limit 3, 2;
 ```
+
+## distinct
+### syntax
+```
+select distinct 대상컬럼 from 테이블명;
+```
+- 대상컬럼 앞에 `distinct`라는 키워드를 사용한다.
+
+#### 회원이 거주하고 있는 지역의 리스트를 중복없이 조회하라
+```
+select distinct addr from member;
+```
